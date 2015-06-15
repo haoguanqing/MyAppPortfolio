@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/main_background">
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/signatureScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:fillViewport="true"
+        android:background="@color/main_background">-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:baselineAligned="false"
+        android:weightSum="1">
+
+        <TextView android:text="@string/welcome_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="20dip"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/text_white"
+            style="@style/TextAppearance.AppCompat.Headline" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dip"
+            android:text="@string/spotify_streamer"
+            android:id="@+id/spotifyButton"
+            android:layout_gravity="center"
+            android:background="@color/button_background"
+            android:textColor="@color/text_white"
+            android:onClick="sendMsg"
+            style="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dip"
+            android:text="@string/scores_app"
+            android:id="@+id/scoresButton"
+            android:layout_gravity="center"
+            android:background="@color/button_background"
+            android:textColor="@color/text_white"
+            android:onClick="sendMsg"
+            style="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dip"
+            android:text="Library App"
+            android:id="@+id/libraryButton"
+            android:layout_gravity="center"
+            android:background="@color/button_background"
+            android:textColor="@color/text_white"
+            android:onClick="sendMsg"
+            style="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dip"
+            android:text="@string/build"
+            android:id="@+id/buildButton"
+            android:layout_gravity="center"
+            android:background="@color/button_background"
+            android:textColor="@color/text_white"
+            android:onClick="sendMsg"
+            style="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dip"
+            android:text="@string/xyz_reader"
+            android:id="@+id/xyzButton"
+            android:layout_gravity="center"
+            android:background="@color/button_background"
+            android:textColor="@color/text_white"
+            android:onClick="sendMsg"
+            style="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dip"
+            android:text="@string/capstone"
+            android:id="@+id/capstoneButton"
+            android:layout_gravity="center"
+            android:background="@color/button_background2"
+            android:textColor="@color/text_white"
+            android:onClick="sendMsg"
+            style="@android:style/TextAppearance.DeviceDefault.Widget.Button" />
+
+    </LinearLayout>
+    <!--</ScrollView>-->
+</RelativeLayout>
